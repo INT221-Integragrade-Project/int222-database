@@ -53,7 +53,7 @@ ALTER TABLE brand ADD CONSTRAINT brand_pk PRIMARY KEY ( brandid );
 CREATE TABLE color (
     colorId    INT(10) NOT NULL,
     colorName    VARCHAR(50),
-    colorCode    VARCHAR(50)
+    colorCode    VARCHAR(10)
 );
 ALTER TABLE color ADD CONSTRAINT color_pk PRIMARY KEY ( colorId );
 
