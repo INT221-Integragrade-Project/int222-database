@@ -8,7 +8,7 @@ DROP TABLE color;
 
 CREATE TABLE orderDetail (
     orderId    INT(20) NOT NULL,
-    userId    INT(10) NOT NULL,
+    userId    INT(15) NOT NULL,
     productColorId    INT(10) NOT NULL,
     orderDate	Date
 );
