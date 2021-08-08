@@ -6,6 +6,7 @@ select * from productColor;
 select * from favorite;
 
 
+
 INSERT INTO brand(brandId, brandName) VALUES(10001, 'ANELLO');
 INSERT INTO brand(brandId, brandName) VALUES(10002, 'CHANEL');
 INSERT INTO brand(brandId, brandName) VALUES(10003, 'DIOR');
