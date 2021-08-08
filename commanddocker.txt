@@ -1,0 +1,1 @@
+sudo docker run --name database -p 3306:3306 -d --restart on-failure --env MYSQL_ROOT_PASSWORD=mysql mysql/mysql-server
