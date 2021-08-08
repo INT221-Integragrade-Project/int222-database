@@ -1,9 +1,9 @@
-select * from favorite;
-select * from user;
-select * from product;
 select * from brand;
 select * from color;
+select * from user;
+select * from product;
 select * from productColor;
+select * from favorite;
 
 
 INSERT INTO brand(brandId, brandName) VALUES(10001, 'ANELLO');
@@ -28,6 +28,10 @@ INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20011, 'Gray', '#AEAEAD'
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20012, 'Pink', '#FFDAF7');
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20013, 'Cream', '#FFF4E2');
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20014, 'Beige', '#EDD9BB');
+
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80001, 'admin','admin','int222','admindola222','admin');
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80002, 'userName1','Hello','World','PWS123456','user');
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80003, 'userName2','Hello2','World2','PWS98765','user');
 
 -- Anello 
 INSERT INTO product(productId,productname,price,warranty,MenufacturrerDate,description,size,brandId) VAlUES(100001, 'ANELLO shoulder bag ALTON SIZE REG', 888.00, '7 Days', '2020-10-02', 'ALTON A collection that brings together Anello\'s most popular material of all time, PU (synthetic leather) developed using a new material. that when touched, it gives a soft, smooth feeling durable and strong According to the main properties of PU (synthetic leather), it is also more lightweight. Anello has also selected a bag shape that is chic, chic, but still has a classic aura. Use earth tones, simple but elegant, easy to match with any outfit. Ready to enjoy traveling smoothly. There is a strap that can be rolled up for easy storage. Can be a Shopping Bag, easy to carry and convenient to use.', '29 x 32 cm', '10001');
@@ -171,10 +175,6 @@ INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) V
 
 INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) VALUES('110063', 100030, '20006', 1000,'PY5Black.png');
 INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) VALUES('110064', 100030, '20013', 1000,'PY5Cream.png');
-
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80001, 'admin','admin','int222','admindola222','admin');
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80002, 'userName1','Hello','World','PWS123456','user');
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80003, 'userName2','Hello2','World2','PWS98765','user');
 
 INSERT INTO favorite(favoriteId, userId, productColorId) VALUES(30001, 80002, 110055);
 INSERT INTO favorite(favoriteId, userId, productColorId) VALUES(30002, 80003, 110055);
