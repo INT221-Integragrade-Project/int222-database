@@ -1,36 +1,36 @@
-DROP TABLE brand;
-DROP TABLE color;
-DROP TABLE user;
-DROP TABLE product;
-DROP TABLE productColor;
 DROP TABLE favorite;
+DROP TABLE productColor;
+DROP TABLE product;
+DROP TABLE user;
+DROP TABLE color;
+DROP TABLE brand;
 
 
 CREATE TABLE brand (
-    brandId    INT NOT NULL,
+    brandId    INT NOT NULL auto_increment PRIMARY KEY,
     brandName  VARCHAR(20) NOT NULL
 );
-ALTER TABLE brand ADD CONSTRAINT brand_pk PRIMARY KEY ( brandid );
+
 
 CREATE TABLE color (
-    colorId    INT NOT NULL,
+    colorId    INT NOT NULL auto_increment PRIMARY KEY,
     colorName    VARCHAR(50),
     colorCode    VARCHAR(10)
 );
-ALTER TABLE color ADD CONSTRAINT color_pk PRIMARY KEY ( colorId );
+
 
 CREATE TABLE user (
-    userId    INT NOT NULL,
+    userId    INT NOT NULL auto_increment PRIMARY KEY,
     userName    VARCHAR(100),
     name   VARCHAR(100),
     lastName   VARCHAR(100),
     password    VARCHAR(100),
     role        VARCHAR(100)
 );
-ALTER TABLE user ADD CONSTRAINT user_pk PRIMARY KEY ( userId );
+
 
 CREATE TABLE product (
-    productId          INT NOT NULL,
+    productId          INT NOT NULL auto_increment PRIMARY KEY,
     productName        VARCHAR(100) NOT NULL,
     price              double(8,2) NOT NULL,
     warranty           VARCHAR(45) NOT NULL,
@@ -39,24 +39,24 @@ CREATE TABLE product (
     size		       VARCHAR(350) NOT NULL,
     brandId            INT NOT NULL
 );
-ALTER TABLE product ADD CONSTRAINT product_pk PRIMARY KEY ( productid );
+
 
 CREATE TABLE productColor (
-    productColorId   INT NOT NULL,
+    productColorId   INT NOT NULL auto_increment PRIMARY KEY,
     productId	INT NOT NULL, 
     colorId	 INT NOT NULL,
     stock INT NOT NULL,
     imageName	VARCHAR(200),
     UNIQUE (productid,colorid)
 );
-ALTER TABLE productColor ADD CONSTRAINT productColor_pk PRIMARY KEY ( productColorId );
+
 
 CREATE TABLE favorite (
-    favoriteId    INT NOT NULL,
+    favoriteId    INT NOT NULL auto_increment PRIMARY KEY,
     userId    INT NOT NULL,
     productColorId    INT(10) NOT NULL
 );
-ALTER TABLE favorite ADD CONSTRAINT favorite_pk PRIMARY KEY ( favoriteId );
+
 
 
 ALTER TABLE product
