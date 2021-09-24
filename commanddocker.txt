@@ -1,9 +1,10 @@
-sudo docker run --name database -p 3306:3306 -d --restart on-failure --env MYSQL_ROOT_PASSWORD=mysql mysql/mysql-server
+sudo docker run --name database -p 3306:3306 -d --restart on-failure --env MYSQL_ROOT_PASSWORD=mysql mysql/mysql-server:latest
 
 
 create user 'devteam'@'%' identified by 'devteam' ;
 grant all privileges on project222.* to devteam@'%' ;
-create user 'project'@'%' identified by 'int222project' ;
+create user 'project'@'%' identified by 'int222project';
 grant select on project.* to project222@'%' ;
 grant insert, update, delete on product to project222@'%' ;
 grant insert, update, delete on productcolor to project222@'%' ;
+grant all privileges on project.* to project222@'%' ;
