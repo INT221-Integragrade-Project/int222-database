@@ -76,8 +76,8 @@ ALTER TABLE productColor
         REFERENCES user ( userId );
         
 ALTER TABLE favorite
-    ADD CONSTRAINT productColor_id_fk FOREIGN KEY ( productColorId )
-        REFERENCES productColor ( productColorId );
+    ADD CONSTRAINT product_id_fk FOREIGN KEY ( productId )
+        REFERENCES product ( productId );
  
  
 -- ALTER TABLE images
