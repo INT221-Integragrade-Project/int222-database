@@ -177,8 +177,8 @@ INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) V
 INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) VALUES('110063', 100030, '20006', 1000,'PY5Black.png');
 INSERT INTO productColor(productColorId, productId, colorId, stock, imageName) VALUES('110064', 100030, '20013', 1000,'PY5Cream.png');
 
-INSERT INTO favorite(favoriteId, userId, productColorId) VALUES(30001, 80002, 110055);
-INSERT INTO favorite(favoriteId, userId, productColorId) VALUES(30002, 80003, 110055);
+INSERT INTO favorite(favoriteId, userId, productId) VALUES(30001, 80002, 100030);
+INSERT INTO favorite(favoriteId, userId, productId) VALUES(30002, 80003, 100025);
 
 -- INSERT INTO orderDetail(orderId, userId, productColorId,orderDate) VALUES(90001, 80002, 110055,'2020-12-17');
 -- INSERT INTO orderDetail(orderId, userId, productColorId,orderDate) VALUES(90002, 80003, 110055,'2021-08-20');

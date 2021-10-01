@@ -10,17 +10,14 @@ CREATE TABLE brand (
     brandId    INT NOT NULL auto_increment PRIMARY KEY,
     brandName  VARCHAR(20) NOT NULL
 );
-<<<<<<< HEAD
-=======
 
->>>>>>> bafe4418b4a85d3ddfdfa5386d0d88f3eb440b04
 
 CREATE TABLE color (
     colorId    INT NOT NULL auto_increment PRIMARY KEY,
     colorName    VARCHAR(50),
     colorCode    VARCHAR(10)
 );
-<<<<<<< HEAD
+
 
 CREATE TABLE user (
     userId    INT NOT NULL auto_increment PRIMARY KEY,
@@ -30,19 +27,8 @@ CREATE TABLE user (
     password    VARCHAR(100)NOT NULL,
     role        VARCHAR(100)NOT NULL
 );
-=======
 
 
-CREATE TABLE user (
-    userId    INT NOT NULL auto_increment PRIMARY KEY,
-    userName    VARCHAR(100),
-    name   VARCHAR(100),
-    lastName   VARCHAR(100),
-    password    VARCHAR(100),
-    role        VARCHAR(100)
-);
-
->>>>>>> bafe4418b4a85d3ddfdfa5386d0d88f3eb440b04
 
 CREATE TABLE product (
     productId          INT NOT NULL auto_increment PRIMARY KEY,
@@ -64,21 +50,14 @@ CREATE TABLE productColor (
     imageName	VARCHAR(200),
     UNIQUE (productid,colorid)
 );
-<<<<<<< HEAD
-=======
 
->>>>>>> bafe4418b4a85d3ddfdfa5386d0d88f3eb440b04
 
 CREATE TABLE favorite (
     favoriteId    INT NOT NULL auto_increment PRIMARY KEY,
     userId    INT NOT NULL,
-    productColorId    INT NOT NULL
+    productId    INT NOT NULL
 );
-<<<<<<< HEAD
-=======
 
-
->>>>>>> bafe4418b4a85d3ddfdfa5386d0d88f3eb440b04
 
 ALTER TABLE product
     ADD CONSTRAINT product_brand_fk FOREIGN KEY ( brandId )
