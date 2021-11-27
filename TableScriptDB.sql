@@ -25,14 +25,14 @@ CREATE TABLE user (
     name   VARCHAR(100)NOT NULL,
     lastName   VARCHAR(100)NOT NULL,
     password    VARCHAR(100)NOT NULL,
-    role        VARCHAR(100)NOT NULL
+    role        VARCHAR(10) NOT NULL
 );
 
 
 
 CREATE TABLE product (
     productId          INT NOT NULL auto_increment PRIMARY KEY,
-    productName        VARCHAR(100) NOT NULL,
+    productName        VARCHAR(70) NOT NULL,
     price              double(8,2) NOT NULL,
     warranty           VARCHAR(45) NOT NULL,
     menufacturrerdate  DATE NOT NULL,

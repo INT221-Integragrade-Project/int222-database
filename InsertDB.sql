@@ -13,7 +13,6 @@ INSERT INTO brand(brandId, brandName) VALUES(10004, 'GUICCI');
 INSERT INTO brand(brandId, brandName) VALUES(10005, 'LYN');
 INSERT INTO brand(brandId, brandName) VALUES(10006, 'YSL');
 
-
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20001, 'Purple', '#B6B0E2');
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20002, 'Blue', '#1B5893');
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20003, 'Green', '#C9EFBD');
@@ -29,9 +28,9 @@ INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20012, 'Pink', '#FFDAF7'
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20013, 'Cream', '#FFF4E2');
 INSERT INTO color(colorId, ColorName, ColorCode) VALUES(20014, 'Beige', '#EDD9BB');
 
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80001, 'admin','admin','int222','admindola222','superadmin');
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80002, 'userName1','Hello','World','PWS123456','admin');
-INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80003, 'userName2','Hello2','World2','PWS98765','customer');
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80001, 'admin','admin','int222','$2a$10$j5M9/Gx/I3/q9vJZNwGnLezp/h3/V/KUVhRYdOByyJvpBS9yX2T.6','superadmin');
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80002, 'userName1','Hello','World','$2a$10$et4rQ5wnTDXBcPU851AcTeuxMeckC6DeSeBlcNb4Jw0Q2fmEevRIG','admin');
+INSERT INTO user(userId, userName, name, lastName,password,role) VALUES(80003, 'userName2','Hello2','World2','$2a$10$Fy.D2cNHVJbgm3WubY9hEek9nnEjgALhLmNp4drCkotly03rD.axG','customer');
 
 -- Anello 
 INSERT INTO product(productId,productname,price,warranty,MenufacturrerDate,description,size,brandId) VAlUES(100001, 'ANELLO shoulder bag ALTON SIZE REG', 888.00, '7', '2020-10-02', 'ALTON A collection that brings together Anello\'s most popular material of all time, PU (synthetic leather) developed using a new material. that when touched, it gives a soft, smooth feeling durable and strong According to the main properties of PU (synthetic leather), it is also more lightweight. Anello has also selected a bag shape that is chic, chic, but still has a classic aura. Use earth tones, simple but elegant, easy to match with any outfit. Ready to enjoy traveling smoothly. There is a strap that can be rolled up for easy storage. Can be a Shopping Bag, easy to carry and convenient to use.', '29 x 32 cm', '10001');
